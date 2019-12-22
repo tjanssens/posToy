@@ -1,11 +1,11 @@
 {
-  "name": "kassa_kindern",
+  "name": "posToy",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run kassa_kindern:server:dev",
+    "build:ssr": "ng run posToy:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

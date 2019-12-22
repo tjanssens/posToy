@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kassa_kindern": {
+    "posToy": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kassa_kindern:build"
+            "browserTarget": "posToy:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kassa_kindern:build:production"
+              "browserTarget": "posToy:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kassa_kindern:build"
+            "browserTarget": "posToy:build"
           }
         },
         "test": {
@@ -124,7 +124,7 @@
         }
       }
     },
-    "kassa_kindern-e2e": {
+    "posToy-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -132,7 +132,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kassa_kindern:serve"
+            "devServerTarget": "posToy:serve"
           }
         },
         "lint": {
@@ -147,5 +147,5 @@
       }
     }
   },
-  "defaultProject": "kassa_kindern"
+  "defaultProject": "posToy"
 }

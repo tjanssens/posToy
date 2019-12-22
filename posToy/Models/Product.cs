@@ -1,6 +1,6 @@
 using System;
 
-namespace kassa_kindern.Models
+namespace posToy.Models
 {
     public class Product
     {
