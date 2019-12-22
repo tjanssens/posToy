@@ -1,0 +1,30 @@
+
+mat-grid-list button.mat-button {
+  width: 82%;
+  height: 62px;
+}
+
+.mat-dialog-content {
+  text-align: center;
+}
+
+mat-grid-list button.mat-button mat-icon {
+  vertical-align: top;
+  font-size: 50px;
+  margin-left: -13%;
+  margin-top: -13%;
+}
+
+mat-grid-list mat-icon {
+  font-size: 50px;
+}
+
+mat-spinner {
+  margin-left: 35%;
+  margin-bottom: 15px;
+}
+mat-icon.success {
+  font-size: 50px;
+  color: darkgreen;
+  margin-left: -10%;
+}

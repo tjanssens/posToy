@@ -1,0 +1,45 @@
+.products {
+  height: 399px;
+  overflow: scroll;
+}
+
+  .products::-webkit-scrollbar,
+  .basket .overview::-webkit-scrollbar {
+    width: 0 !important
+  }
+
+  .products .mat-card {
+    height: 124px;
+  }
+
+  .products .mat-card-image:first-child {
+    width: 100%;
+    margin-left: auto;
+  }
+
+button.pay {
+  width: 82%;
+  height: 62px;
+  font-size: 23px;
+  position: absolute;
+  bottom: 11px;
+}
+
+  button.pay .mat-icon {
+    font-size: 33px;
+    vertical-align: top;
+  }
+
+.basket .overview {
+  height: 310px;
+  overflow: auto;
+}
+
+  .basket .overview .product img {
+    height: 35px;
+  }
+
+  .basket .overview .product td {
+    padding: 10px;
+    font-size: 20px;
+  }

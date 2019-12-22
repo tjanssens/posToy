@@ -1,0 +1,35 @@
+
+
+<h1 *ngIf="product">{{product.name}}</h1>
+<div class="row">
+  <div class="col-sm-9 products">
+
+    <mat-grid-list cols="4" rowHeight="1:1" gutterSize="10">
+      <mat-grid-tile *ngFor="let product of products" (click)="addToTransactions(product)">
+        <mat-card class="example-card mat-elevation-z2">
+          <img mat-card-image [src]="product.imageUrl" [alt]="product.name">
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="col-sm-3 basket">
+    <div class="overview">
+      <table class='table'>
+        <tbody>
+          <tr class="product" *ngFor="let transaction of transactions;index as i;" (click)="deleteTransaction(i)">
+            <td><img [src]="transaction.imageUrl" [alt]="transaction.name" /></td>
+            <td>€ {{transaction.price}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+
+    <button mat-raised-button color="primary" class="pay" [disabled]="getTotalCost()==0" (click)="startPayment()">
+      &euro;&nbsp;{{getTotalCost()}} <mat-icon aria-hidden="false" aria-label="Example home icon">credit_card</mat-icon>
+    </button>
+  </div>
+
+
+</div>

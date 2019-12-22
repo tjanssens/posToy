@@ -1,0 +1,28 @@
+<div class="payment">
+
+  <h1 mat-dialog-title *ngIf="!data.paymentSuccess">Nog € {{data.amount}} te betalen</h1>
+  <h1 mat-dialog-title *ngIf="data.paymentSuccess">Klant heeft € {{data.amount}} betaald</h1>
+  <div mat-dialog-content>
+    <mat-grid-list cols="2" rowHeight="1:1" gutterSize="10" *ngIf="!data.paymentType">
+      <mat-grid-tile (click)="setPaymentType('cash')">
+        <mat-icon  aria-hidden="false" aria-label="Example home icon">money</mat-icon>
+      </mat-grid-tile>
+      <mat-grid-tile (click)="setPaymentType('card')">
+        <mat-icon   aria-hidden="false" aria-label="Example home icon">credit_card</mat-icon>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <div *ngIf="data.paymentType=='card' && !data.paymentSuccess">
+      <mat-spinner></mat-spinner>
+      <h4>Wachten op klant...</h4>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">contactless</mat-icon>
+    </div>
+    <div *ngIf="data.paymentSuccess">
+      <mat-icon class="success" aria-hidden="false" aria-label="Example home icon">done</mat-icon>
+      <h4>Gelukt</h4>
+    </div>
+  </div>
+
+  <div mat-dialog-actions class="row">
+   
+  </div>
+</div>

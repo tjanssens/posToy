@@ -1,0 +1,17 @@
+.products {
+  height: 399px;
+  overflow: scroll;
+}
+
+button.pay {
+  width: 82%;
+  height: 62px;
+  font-size: 23px;
+  position: absolute;
+  bottom: 11px;
+}
+
+.basket .overview {
+  height: 310px;
+  overflow: auto;
+}
